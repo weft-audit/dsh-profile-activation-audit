@@ -10,6 +10,17 @@ metadata:
 Determine what the loader actually did. Do not infer activation from a composed
 configuration alone, and do not turn a detector report into a repair claim.
 
+## Evidence status
+
+This workflow was validated on 2026-10-21 on Windows with
+`@deepseek-ai/dsh@0.2.1-rc.2` and a one-shot `headless` profile. It covers real
+preflight-denial, whitespace-name, missing-target, and reverse-control cases.
+
+It is not a supported DeepSeek product. It has not been validated on Linux or
+macOS, against other DSH versions, with every detector format, or through the
+published `$skill-installer` path. Treat rules that depend on report wording as
+portable only after checking the current report format.
+
 ## Hard boundaries
 
 - Treat `--dump-config` as composition evidence only. It does not run the
