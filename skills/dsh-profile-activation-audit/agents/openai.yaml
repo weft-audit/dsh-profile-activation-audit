@@ -1,0 +1,4 @@
+interface:
+  display_name: "DSH Profile Activation Audit"
+  short_description: "Diagnose DSH profile activation with runtime evidence"
+  default_prompt: "Use $dsh-profile-activation-audit to determine whether this DSH profile row actually reached the loader and collect reproducible evidence."
